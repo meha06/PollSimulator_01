@@ -16,27 +16,28 @@
 
 		<tr>
 			<td>
-				<h3>Give Your Vote: </h3>
+				<h3>Give Your Vote Here: </h3>
 				<br> 
 				<%
-				String str=(String)request.getAttribute("result");
-				String[] lst = (str.substring(1, str.length()-1)).split(",");
-				
-				%>
-				<form action="vote">
+ 					String s1 = request.getAttribute("List").toString();
+ 					String[] lst = (s1.substring(1, s1.length() - 1)).split(",");
+
+ 					String s2 = request.getAttribute("idList").toString();
+ 					String[] lst2 = (s2.substring(1, s2.length() - 1)).split(",");
+ 				%>
+
+				<form action="voteCandidate">
 					Student ID : <input type="text" name="id" id="id">
 					<%
 						for (int i = 0; i < lst.length; i++) {
-							out.println("<br><br><input type=\"radio\" name=\"candidate\" value=\"" + lst[i] + "\"  > ");
+							out.println("<br><br><input type=\"radio\" name=\"candidate\" value=\"" + lst2[i].trim() + "\"  > "+ lst[i]);
 						}
 					%>
 
 					<br>
 					<br>
-					<br> <input type="submit" value="vote">
+					<br> <input type="submit">
 				</form>
-
-
 
 
 			</td>

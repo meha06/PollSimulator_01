@@ -13,10 +13,10 @@
 </td></tr>
 
 <tr><td>
-<a href="add.jsp">Add Candidates</a><br><br>
-<a href="vote.jsp" >Do Vote</a><br><br>
-<a href="result.jsp" >Poll Result</a><br><br>
-<a href="summary.jsp">Voting Summary</a><br><br>
+<a href="add">Add Candidates</a><br><br>
+<a href="candidateList" >Do Vote</a><br><br>
+<a href="result" >Poll Result</a><br><br>
+<a href="summary">Voting Summary</a><br><br>
 </td>
 </tr>
 </table>

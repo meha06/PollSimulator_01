@@ -14,11 +14,12 @@
 
 <tr><td>
 <h3>Enter candidate details:</h3><br>
-<form method="post" name="addform" action="add">
-<label>Candidate Name: </label>
-<input type="text" id="name" ><br><br>
-<center><input type="submit" value="Submit"></center>
-</form>
+<form method="post" action="addCandidate">
+ 	Candidate ID  : <input type="text" name="roll" id="roll" ><br><br>
+ 	Candidate Name : <input type="text" name="name" id="name"><br><br>
+ 
+ 	<input type="submit" >
+ </form>
 </td>
 </tr>
 </table>
